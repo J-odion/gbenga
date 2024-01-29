@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: 10% auto;
+}
+
+p {
+  margin-top: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #2878be;
+  margin-left: 5px;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid #e3e3e3;
+  margin-top: 20px;
+}
+
+h1 {
+  color: #2878be;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+  color: #2878be;
+  font-weight: 500;
+  text-align: center;
+}
+
+button {
+  width: calc(100% - 10px);
+  margin-top: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #2878be;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  padding: 5px;
+  color: #2878be;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #b6b6b6;
+}
+
+input:focus {
+  border-bottom-color: #2878be;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.two-button {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.two-button > button {
+  /* margin-left: 15px; */
+}
+
+#contact-details-group {
+  display: flex;
+  flex-direction: column;
+  color: #2878be;
+  font-weight: 600;
+  width: 100%;
+}
+.items{
+  display: flex;
+  gap: 20px;
+}
+
+#contact-name {
+  font-size: 20px;
+  color: #2878be;
+}
+
+.contact-details-group-attr {
+  color: #2878be;
+}
+/* Tablet Styles (768px to 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    width: 70%;
+  }
+  .items{
+    gap: 35px;
+  }
+  #contact-name {
+    font-size: 22px;
+  }
+}
+
+/*  Desktop Styles (992px and above)  */
+@media only screen and (min-width: 992px) {
+  body {
+    width: 30%;
+  }
+  .items{
+    gap: 50px;
+  }
+  #contact-name {
+    font-size: 24px;
+  }
+}

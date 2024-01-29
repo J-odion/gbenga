@@ -1,0 +1,74 @@
+<!-- contact-details-group.html (Page 2: Contact Details) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Contact Details</title>
+  </head>
+
+  <body>
+    <section>
+      <div class="two-button">
+        <button onclick="location.href='index.html'">Contacts</button>
+        <button onclick="moveToEdit()">Edit</button>
+      </div>
+      <div id="contact-details-group">
+        <p id="contact-name"></p>
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          ">
+          <div style="align-self: flex-start">
+            <p class="contact-details-group-attr">Phone</p>
+            <p
+              id="phone"
+              class="contact-details-group"></p>
+          </div>
+          <div class="items">
+            <span
+              class="material-symbols-outlined"
+              style="color: #2878be; font-size: 30px">
+              phone_iphone
+            </span>
+            <span
+              class="material-symbols-outlined"
+              style="color: #2878be; font-size: 30px">
+              edit
+            </span>
+          </div>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          ">
+          <div style="align-self: flex-start">
+            <p class="contact-details-group-attr">Email</p>
+            <p
+              id="email"
+              class="contact-details-group"></p>
+          </div>
+          <span
+            class="material-symbols-outlined"
+            style="color: #2878be; font-size: 30px">
+            mail
+          </span>
+        </div>
+      </div>
+    </section>
+    <script src="scripts.js"></script>
+  </body>
+</html>
